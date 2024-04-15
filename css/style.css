@@ -1,0 +1,22 @@
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @use "abstracts" as *;
+ *   | ^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   scss\abstracts\mixin\_ellipsis.scss 1:1  @forward
+ *   scss\abstracts\mixin\_index.scss 4:1     @forward
+ *   scss\abstracts\_index.scss 3:1           @use
+ *   scss\base\_accessibility.scss 1:1        @forward
+ *   scss\base\_index.scss 3:1                @use
+ *   scss\style.scss 1:1                      root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use \"abstracts\" as *;\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\abstracts\\mixin\\_ellipsis.scss 1:1  @forward\a   scss\\abstracts\\mixin\\_index.scss 4:1     @forward\a   scss\\abstracts\\_index.scss 3:1           @use\a   scss\\base\\_accessibility.scss 1:1        @forward\a   scss\\base\\_index.scss 3:1                @use\a   scss\\style.scss 1:1                      root stylesheet";
+}

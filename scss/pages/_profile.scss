@@ -1,0 +1,46 @@
+@use  "../abstracts/" as *;
+
+.my-order-list {
+    display: grid;
+    gap: ren(8);
+    margin: 0 rem(20);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.showcut-wrap {
+    display: flex;
+    gap: 1rem;
+    & li{
+            width: 3.5rem;
+            height: 3.5rem;
+            background-color: $grayf8;
+            border-radius: 100%;
+            position: relative;
+            &>a{
+                @include position(a, left, 50%, top, 50%);
+            }
+        }
+    }
+.my-active_list {
+    display: flex;
+    gap: 2rem;
+    .btn{
+        border-radius: 2rem;
+    }
+}
+
+
+/*------------------------------- Hello, Romina! -----------------------------------*/
+
+
+
+
+
+
