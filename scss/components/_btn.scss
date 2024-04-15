@@ -18,27 +18,6 @@
 @include buttonColor("-blue", $blue, $white, rem(2), $blue/*, null*/);
 
 
-.btn {
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-    box-sizing: border-box;
-    white-space: nowrap;
-    //border-radius: rem($radius);
-    &.alram {
-      position: relative;
-      &::after {
-        @include position(a, right, rem(-4), top, rem(-2));
-        content: "";
-        width: rem(14);
-        height: rem(14);
-        border-radius: 100%;
-        background-color: $green;
-        border: rem(2) solid $white;
-        box-sizing: border-box;
-      }
-    }
-  }
 
 .btn {
     display: inline-flex;
@@ -46,7 +25,7 @@
     cursor: pointer;
     box-sizing: border-box;
     white-space: nowrap;
-    //border-radius: rem(2);
+    
     &.alram {
       position: relative;
       &::after {
@@ -75,7 +54,7 @@
         content: "";
         width: rem(14);
         height: rem(14);
-        //border-radius: 50;
+        
     }
   }
 
