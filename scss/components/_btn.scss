@@ -1,12 +1,12 @@
 @use '../abstracts/' as *;
 @use '../base/' as *;
 
-
-@include buttonSize(lg, 60, 22, 44);
-@include buttonSize(md, 50, 22, 44);
-@include buttonSize(base, 40, 16, 27);
-@include buttonSize(sm, 35, 16, 17);
-@include buttonSize(xs, 30, 16, 16);
+//$size, $height, $font-size, $padding
+@include buttonSize(lg, 60, 16, 32);
+@include buttonSize(md, 50, 15, 30);
+@include buttonSize(base, 40, 14, 20);
+@include buttonSize(sm, 35, 13, 26);
+@include buttonSize(xs, 30, 10, 20);
 
 
 @include buttonColor(blue, $white, $blue/*, null*/);
@@ -50,11 +50,10 @@
     font-size: rem(15);
     font-weight: 700;
     &::after{
-        @include background("../imgs/1/Arrow.svg", right rem(12) bottom rem(10), $grayf8);
-        content: "";
-        width: rem(14);
-        height: rem(14);
-        
+      @include background("../imgs/1/Arrow.svg", right rem(12) bottom rem(10), $grayf8);
+      content: "";
+      width: rem(14);
+      height: rem(14);
     }
   }
 

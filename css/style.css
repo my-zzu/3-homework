@@ -476,7 +476,7 @@ body {
   font-weight: 700;
   line-height: 3rem;
   letter-spacing: -0.021rem;
-  margin: 0 0 2rem 1.2rem;
+  margin: 0 0 0rem 1.2rem;
 }
 
 .heading.base {
@@ -527,7 +527,7 @@ body {
   font-size: 1.6rem;
   color: #000000;
   font-weight: 600;
-  line-height: 2rem;
+  line-height: 2.1rem;
   letter-spacing: -0.016rem;
   margin: 0;
 }
@@ -585,32 +585,32 @@ body {
 
 .btn.lg {
   height: 6rem;
-  font-size: 2.2rem;
-  padding: 0 4.4rem;
+  font-size: 1.6rem;
+  padding: 0 3.2rem;
 }
 
 .btn.md {
   height: 5rem;
-  font-size: 2.2rem;
-  padding: 0 4.4rem;
+  font-size: 1.5rem;
+  padding: 0 3rem;
 }
 
 .btn.base {
   height: 4rem;
-  font-size: 1.6rem;
-  padding: 0 2.7rem;
+  font-size: 1.4rem;
+  padding: 0 2rem;
 }
 
 .btn.sm {
   height: 3.5rem;
-  font-size: 1.6rem;
-  padding: 0 1.7rem;
+  font-size: 1.3rem;
+  padding: 0 2.6rem;
 }
 
 .btn.xs {
   height: 3rem;
-  font-size: 1.6rem;
-  padding: 0 1.6rem;
+  font-size: 1rem;
+  padding: 0 2rem;
 }
 
 .btn.blue {
@@ -692,7 +692,7 @@ body {
 
 .announcement {
   background-color: #f8f8f8;
-  padding: 1rem 1.4rem;
+  padding: 1rem 3rem 1rem 1.4rem;
   border-radius: 1rem;
   margin: 0 2rem 1.8rem;
   position: relative;
@@ -766,7 +766,7 @@ body {
 .profile-list {
   display: flex;
   gap: 0.9rem;
-  margin: 0 2rem 2.5rem;
+  padding: 2rem 1.95rem 2rem 1.95rem;
   overflow-x: auto;
   overflow-y: hidden;
 }
@@ -815,6 +815,11 @@ body {
 }
 .my-active_list .btn {
   border-radius: 2rem;
+}
+
+/*------------------------------- Recently viewed -----------------------------------*/
+.my-orders_list {
+  padding: 2rem, 2.5rem;
 }
 
 /*------------------------------- Recently viewed -----------------------------------*/
