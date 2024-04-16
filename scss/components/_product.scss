@@ -11,7 +11,7 @@
   overflow: hidden;
   &:hover{
     img{
-      transform: scale(1.5);
+      transform: scale(1.2);
     }
   }
   img {
@@ -28,16 +28,17 @@
   display: flex;
   gap: rem(6);
   padding-left: rem(20);
+
   overflow-x: auto;
   overflow-x: hidden;
-  a {
+  a {            background-color: rgba(255, 162, 0, 0.196);
     @extend %productThumb;
     display: block;
     width: rem(104);
     height: rem(175);
     border-radius: rem(9);
     img {
-      transform: scale(1.2);
+      transform: scale(1);
       transform-origin: center;
     }
   }

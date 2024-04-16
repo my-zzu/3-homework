@@ -1,14 +1,7 @@
 @use  "../abstracts/" as *;
 
-.my-order-list {
-    display: grid;
-    gap: ren(8);
-    margin: 0 rem(20);
-    overflow-x: auto;
-    overflow-y: hidden;
-}
 
-.wrap {
+.wrap{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +23,7 @@
     }
 .my-active_list {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     .btn{
         border-radius: 2rem;
     }
@@ -40,15 +33,56 @@
 /*------------------------------- Recently viewed -----------------------------------*/
 
 
-.my-orders_list{
-    padding: 2rem, 2.5rem;
-    
+
+/*------------------------------- my-orders -----------------------------------*/
+
+.my-order-list {
+    display: inline-flex;
+    gap: rem(13);
+    margin: rem(20) 0 rem(20) rem(20);
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
+/*------------------------------- Stories(product-vertical) -----------------------------------*/
 
 
-
-/*------------------------------- Recently viewed -----------------------------------*/
+.Stories{
+    
+    &>li{
+        position: relative;
+        &::before{
+            @include after(30, 30, 100%, 0, left 50%, top 50%, 1, $grayd9);
+            // content: "";
+            // width: rem(30);
+            // height: rem(30);
+            // border-radius: 100%;
+            // margin: 0;
+            // background: $grayd9;
+            // position: absolute;
+            // left: 50%;
+            // top: 50%;
+            // transform: translate(-50%, -50%);
+            // opacity: 50%;
+            // z-index: 1;
+        }
+        &::after{
+           // @include after(30, 30, 100%, 0, left 50%, top 50%, 1, $grayd9);
+            content: "";
+            width: rem(30);
+            height: rem(30);
+            border-radius: 100%;
+            margin: 0;
+            background: url("../../imgs/Stories/ico_mov_play.svg") no-repeat left 5px top 5px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 50%;
+            z-index: 2;
+        }
+    }
+}
 
 
 

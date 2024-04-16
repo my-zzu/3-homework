@@ -8,11 +8,11 @@
 @include buttonSize(sm, 35, 13, 26);
 @include buttonSize(xs, 30, 10, 20);
 
-
+//$class, $color, $bgColor, $borderWidth:null,$borderColor:null/*, $radius*/
 @include buttonColor(blue, $white, $blue/*, null*/);
 @include buttonColor(pink, $white, $pink/*, null*/);
 @include buttonColor(black, $white, $gray20/*, null*/);
-@include buttonColor(blue2, $blue, $bluee5/*, null*/);
+@include buttonColor(blue2, $blue2, $bluee5/*, null*/);
 @include buttonColor(gray, $black, $graye7/*, null*/);
 @include buttonColor("outline-blue", $blue, $white, rem(2), $blue/*, null*/);
 @include buttonColor("-blue", $blue, $white, rem(2), $blue/*, null*/);
@@ -39,24 +39,42 @@
         box-sizing: border-box;
       }
     }
-  }
+}
   
-  .btn-more {
-    display: flex;
-    align-items: center;
-    gap: rem(13);
-    color: $gray20;
-    font-family: $english2;
-    font-size: rem(15);
-    font-weight: 700;
-    &::after{
-      @include background("../imgs/1/Arrow.svg", right rem(12) bottom rem(10), $grayf8);
-      content: "";
-      width: rem(14);
-      height: rem(14);
-    }
-  }
 
+.btn-more {
+  display: flex;
+  align-items: center;
+  gap: rem(13);
+  color: $gray20;
+  font-family: $english2;
+  font-size: rem(15);
+  font-weight: 700;
+  &::after{
+    @include background("../imgs/1/Arrow.svg", right rem(12) bottom rem(10), $grayf8);
+    content: "";
+    width: rem(14);
+    height: rem(14);
+  }
+}
+
+
+.alram1 {
+  // width: 35px;
+  // height: 35px;
+  position: relative;
+  &::after {
+    @include position(a, right, rem(0), top, rem(0));
+    content: "";
+    width: rem(10);
+    height: rem(10);
+    border-radius: 100%;
+    background-color: $blue;
+    border: rem(2) solid $white;
+    box-sizing: border-box;
+    
+  }
+}
 
 
 

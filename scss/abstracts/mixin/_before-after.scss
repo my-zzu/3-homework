@@ -1,0 +1,21 @@
+@use "../../abstracts/" as *;
+
+
+@mixin after($width, $height, $radius, $margin, $x: $vx, $y: $vy, $z: 1, $background){
+    @include position(a, $x $vx, $y $vy, $z 1);
+    @include background($background, null, null, contain);
+    content: "";
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+    margin: 0 $margin;
+    
+}
+
+
+
+
+
+//사용할때
+//@include after($width, $height, $radius, $margin, $x: $vx, $y: $vy, $z: 1, $background);
+

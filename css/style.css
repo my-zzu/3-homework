@@ -375,7 +375,7 @@ body {
   overflow: hidden;
 }
 .product-like__thumb:hover img, .product-list__thumb:hover img, .product-vertical a:hover img {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 .product-like__thumb img, .product-list__thumb img, .product-vertical a img {
   width: 100%;
@@ -393,13 +393,14 @@ body {
   overflow-x: hidden;
 }
 .product-vertical a {
+  background-color: rgba(255, 162, 0, 0.196);
   display: block;
   width: 10.4rem;
   height: 17.5rem;
   border-radius: 0.9rem;
 }
 .product-vertical a img {
-  transform: scale(1.2);
+  transform: scale(1);
   transform-origin: center;
 }
 
@@ -629,7 +630,7 @@ body {
 }
 
 .btn.blue2 {
-  color: #004cff;
+  color: #0042e0;
   background-color: #e5ebfc;
 }
 
@@ -688,6 +689,23 @@ body {
   content: "";
   width: 1.4rem;
   height: 1.4rem;
+}
+
+.alram1 {
+  position: relative;
+}
+.alram1::after {
+  position: absolute;
+  right: 0rem;
+  top: 0rem;
+  z-index: var(--zindex, 1);
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  background-color: #004cff;
+  border: 0.2rem solid #ffffff;
+  box-sizing: border-box;
 }
 
 .announcement {
@@ -775,12 +793,19 @@ body {
   border-radius: 3.5rem;
 }
 
-.my-order-list {
-  display: grid;
-  gap: ren(8);
-  margin: 0 2rem;
-  overflow-x: auto;
-  overflow-y: hidden;
+.Stories {
+  position: relative;
+}
+.Stories > li::after {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  margin: 0;
+  background: #d9d9d9;
+  position: absolute;
+  left 50%: top 50%;
+  z-index: var(--zindex, 1);
 }
 
 .wrap {
@@ -811,17 +836,53 @@ body {
 
 .my-active_list {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 .my-active_list .btn {
   border-radius: 2rem;
 }
 
 /*------------------------------- Recently viewed -----------------------------------*/
-.my-orders_list {
-  padding: 2rem, 2.5rem;
+/*------------------------------- my-orders -----------------------------------*/
+.my-order-list {
+  display: inline-flex;
+  gap: 1.3rem;
+  margin: 2rem 0 2rem 2rem;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
-/*------------------------------- Recently viewed -----------------------------------*/
+/*------------------------------- Stories(product-vertical) -----------------------------------*/
+.Stories > li {
+  position: relative;
+}
+.Stories > li::before {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  margin: 0;
+  background: #d9d9d9;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 50%;
+  z-index: 1;
+}
+.Stories > li::after {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  margin: 0;
+  background: url("../../imgs/Stories/ico_mov_play.svg") no-repeat left 5px top 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 50%;
+  z-index: 2;
+}
 
 /*# sourceMappingURL=style.css.map */
